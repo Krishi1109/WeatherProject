@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   {{>headerlinks}}
+    <title>Weather App</title>
+</head>
+
+<body>
+    <!-- Start navbar -->
+    {{>navbar}}
+    <!-- End navbar -->
+
+
+
+    <!-- Start Header -->
+    <div class="container-fluid mian_header">
+        <div class="row">
+            <div class="col-md-10 col-10 mx-auto">
+
+               <div class="mian_content">
+                 <form class="temp_form" action="">
+                   <input type="text" id="cityName" placeholder="Enter your City" autocomplete="off">
+                   <input type="submit" value="search" id="submitBtn">
+                 </form>
+               </div>
+
+               <div class="tempInfo">
+                 <div class="top_layer">
+                   <p id="day">Sunday</p>
+                   <p id="today_date">10 sep</p>
+                 </div>
+                 <div class="main_layer">
+                   <p id="city_name">Get output</p>
+                   <div class="middle_layer data_hide">
+                     <p id="temp"><span id="temp_real_val">0</span> <sup>0</sup>C</p>
+                     <p id="temp_status"><i class="fas fa-cloud"></i> </p>
+                   </div>
+                 </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+
+    <!-- Start Footer  -->
+    {{>footer}}
+    <!-- End Footer -->
+
+    <script src="js/main.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
